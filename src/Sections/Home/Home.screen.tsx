@@ -1,11 +1,11 @@
 import React from 'react';
-import Navigation from '../components/Navigation/Navigation.component';
+import Navigation from '../../components/Navigation/Navigation.component';
 import { AdDiv, BackgroundImage, BigTitle, ButtonsDiv, ButtonStart, CaloriesContent, CaloriesDiv, CaloriesImage, CaloriesSpan, Container, Content, FigureSpan, HeartImage, HeartRage, HeartSpan, Join, Left, Person, Right, Subtitle, TheBestAd } from './Home.styles';
-import ImagePerson from '../assets/hero_image.png'
-import BackImage from '../assets/hero_image_back.png'
-import Heart from '../assets/heart.png'
-import CaloriesImg from '../assets/calories.png'
-import { Div, Span, TransparentSpan } from '../styles/general.styles';
+import ImagePerson from '../../assets/hero_image.png'
+import BackImage from '../../assets/hero_image_back.png'
+import Heart from '../../assets/heart.png'
+import CaloriesImg from '../../assets/calories.png'
+import { Div, Span, TransparentSpan } from '../../styles/general.styles';
 
 
 const Home: React.FC = () => {
