@@ -36,14 +36,15 @@ export const Categories = styled.div`
         background-color: var(--orange);
         cursor: pointer;
     }
+    svg{
+        width: 2rem;
+        fill: white;
+    }
     
 `
 
 export const CategoriesSpan = styled.span`
-    :nth-child(1){
-        width: 2rem;
-        fill: white;
-    }
+   
     :nth-child(2){
         font-size: 1rem;
         font-weight: bold;
