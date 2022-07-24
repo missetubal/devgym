@@ -14,7 +14,7 @@ const Programs: React.FC = () => {
       </Header>
       <ProgramCategories>
         {programsData.map((program) => (
-          <Categories>
+          <Categories key={program.heading}>
             <CategoriesSpan>{program.image}</CategoriesSpan>
             <CategoriesSpan>{program.heading}</CategoriesSpan>
             <CategoriesSpan>{program.details}</CategoriesSpan>
