@@ -45,7 +45,7 @@ export const Plan = styled.div`
         height: 2rem;
     }
     :nth-child(2){
-        background-color: var(--orange);
+        background: var(--planCard);
         transform: scale(1.1);
         svg{
             fill: white;

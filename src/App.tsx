@@ -3,6 +3,7 @@ import Home from './Sections/Home/Home.screen';
 import Plans from './Sections/Plans/Plans.screen';
 import Programs from './Sections/Programs/Programs.screen';
 import Reasons from './Sections/Reasons/Reasons.screen';
+import Testimonials from './Sections/Testimonials/Testimonials.screen';
 import { GlobalStyle } from './styles/general.styles';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Programs/>
       <Reasons/>
       <Plans/>
+      <Testimonials/>
     </div>
   );
 }

@@ -33,7 +33,7 @@ export const Categories = styled.div`
     justify-content: space-between; 
 
     :hover{
-        background-color: var(--orange);
+        background: var(--planCard);
         cursor: pointer;
     }
     svg{
