@@ -31,7 +31,7 @@ const Plans: React.FC = () => {
                     <Div>
                         <Span>See more benefits </Span>
                     </Div>
-                    <Button>Join Us</Button>
+                    <Button>Join Now</Button>
                 </Plan>
             ))}
         </PlansCard>

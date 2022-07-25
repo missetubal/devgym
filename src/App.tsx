@@ -1,5 +1,6 @@
 
 import Home from './Sections/Home/Home.screen';
+import Join from './Sections/Join/Join.screen';
 import Plans from './Sections/Plans/Plans.screen';
 import Programs from './Sections/Programs/Programs.screen';
 import Reasons from './Sections/Reasons/Reasons.screen';
@@ -15,6 +16,7 @@ function App() {
       <Reasons/>
       <Plans/>
       <Testimonials/>
+      <Join/>
     </div>
   );
 }
