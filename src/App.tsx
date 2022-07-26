@@ -1,4 +1,5 @@
 
+import Footer from './components/Footer/Footer.component';
 import Home from './Sections/Home/Home.screen';
 import Join from './Sections/Join/Join.screen';
 import Plans from './Sections/Plans/Plans.screen';
@@ -17,6 +18,7 @@ function App() {
       <Plans/>
       <Testimonials/>
       <Join/>
+      <Footer/>
     </div>
   );
 }
