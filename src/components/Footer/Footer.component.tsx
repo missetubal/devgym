@@ -6,7 +6,7 @@ import Github from '../../assets/github.png'
 import Instagram from '../../assets/instagram.png'
 import Linkedin from '../../assets/linkedin.png'
 import Logo from '../../assets/logo.png'
-import { Div } from '../../styles/general.styles';
+import { Blur, Div } from '../../styles/general.styles';
 
 
 const Footer: React.FC = () => {
@@ -23,6 +23,8 @@ const Footer: React.FC = () => {
                     <img src={Logo} alt='' style={{width: '10rem'}}/>
                 </Div>
             </FooterContainer>
+            <Blur id='blurOne'></Blur>
+            <Blur id='blurTwo'></Blur>
         </Container>
     )
 }

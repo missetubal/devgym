@@ -5,6 +5,11 @@ import { Button } from "../../styles/general.styles";
 export const Container = styled.div`
     display: flex;
     justify-content: space-between;
+    #home-blur{
+        width: 22rem;
+        height: 30rem;
+        left: 0;
+    }
 `
 
 export const Left = styled.div`

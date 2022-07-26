@@ -8,6 +8,18 @@ export const Container = styled.div`
     gap: 4rem;
     position: relative;
 
+    #blurOne{
+        width: 32rem;
+        height: 23rem;
+        top: 6rem;
+        left: 0;
+    }
+    #blurTwo{
+        width: 32rem;
+        height: 23rem;
+        top: 10rem;
+        right: 0;
+    }
 `
 
 export const Header = styled.div`

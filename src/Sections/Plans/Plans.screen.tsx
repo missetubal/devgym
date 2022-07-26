@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Div, Span, TransparentSpan } from '../../styles/general.styles';
+import { Blur, Button, Div, Span, TransparentSpan } from '../../styles/general.styles';
 import { Container, Feature, Header, Plan, PlansCard } from './Plans.style';
 import { plansData } from '../../data/PlansData';
 
@@ -9,6 +9,8 @@ import WhiteTick from '../../assets/whiteTick.png'
 const Plans: React.FC = () => {
   return (
     <Container>
+        <Blur id='blurOne'></Blur>
+        <Blur id='blurTwo'></Blur>
         <Header>
             <TransparentSpan>Ready to start</TransparentSpan>
             <Span>Your Jorney</Span>

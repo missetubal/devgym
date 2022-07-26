@@ -49,3 +49,10 @@ export const Button = styled.button`
         cursor: pointer;
     }   
 `
+export const Blur = styled.div`
+  background: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+`
