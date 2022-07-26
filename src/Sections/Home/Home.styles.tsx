@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Button } from "../../styles/general.styles";
 
@@ -40,14 +41,14 @@ export const Person = styled.img`
     right: 8rem;
     width: 23rem;
 `
-export const BackgroundImage = styled.img`
+export const BackgroundImage = styled(motion.img)`
     position: absolute;
     top: 4rem;
     right: 20rem;
     z-index: -1;
     width: 15rem;
 `
-export const BigTitle = styled.div`
+export const Heading = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -77,16 +78,16 @@ export const TheBestAd = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    div{
+        position: absolute;
+        background-color: var(--orange);
+        width: 4.5rem;
+        height: 80%;
+        left: 8px;
+        border-radius: 3rem;
+        z-index: 1;
+    }
 
-`
-export const AdDiv = styled.div`
-    position: absolute;
-    background-color: var(--orange);
-    width: 4.5rem;
-    height: 80%;
-    left: 8px;
-    border-radius: 3rem;
-    z-index: 1;
 `
 
 export const Content = styled.div`
@@ -126,7 +127,7 @@ export const ButtonStart = styled(Button)`
 
 `
 
-export const HeartRage = styled.div`
+export const HeartRage = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -140,9 +141,6 @@ export const HeartRage = styled.div`
     top: 7rem;
 `
 
-export const HeartImage = styled.img`
-    width: 2rem;
-`
 
 export const HeartSpan = styled.span`
     :nth-child(2){
@@ -154,7 +152,7 @@ export const HeartSpan = styled.span`
     }
 `
 
-export const CaloriesDiv = styled.div`
+export const CaloriesDiv = styled(motion.div)`
     display: flex;
     gap: 2rem;
     background-color: var(--caloryCard);
@@ -166,22 +164,17 @@ export const CaloriesDiv = styled.div`
     right: 28rem;
 `
 
-export const CaloriesImage = styled.img`
-    width: 3rem;
-`
 export const CaloriesContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-`
-
-export const CaloriesSpan = styled.span`
-    :nth-child(1){
+    span{
+        :nth-child(1){
         color: var(--gray);
-    }
-    :nth-child(2){
-        color: white;
-        font-size: 1.5rem;
+        }
+        :nth-child(2){
+            color: white;
+            font-size: 1.5rem;
+        }
     }
 `

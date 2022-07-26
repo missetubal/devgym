@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Div, Span, TransparentSpan } from '../../styles/general.styles';
 import { Container, Left, Right } from './Testimonials.style';
 import { testimonialsData } from '../../data/TestimonialsData';
+import {motion} from 'framer-motion'
 
 //assets
 import ArrowRight from '../../assets/rightArrow.png'
@@ -9,13 +10,20 @@ import ArrowLeft from '../../assets/leftArrow.png'
 
 const Testimonials: React.FC = () => {
     const [index, setIndex] = useState(0)
+    const transition = {type: 'spring', duration: 3}
     return (
         <Container id='testimonials'>
             <Left>
                 <Span>testimonials</Span>
                 <TransparentSpan>what they</TransparentSpan>
                 <Span>say about us</Span>
-                <Span>
+                <Span as={motion.span}
+                    key={index}
+                    initial={{opacity: 0, x: 100}}
+                    animate={{opacity: 1, x: 0}}
+                    exit={{opacity: 0, x:-100}}
+                    transition={transition}
+                >
                     {testimonialsData[index].review}
                 </Span>
                 <Span>
@@ -26,9 +34,25 @@ const Testimonials: React.FC = () => {
                 </Span>
             </Left>
             <Right>
-                <Div></Div>
-                <Div></Div>
-                <img src={testimonialsData[index].image} alt='' id='personImage' />
+                <motion.div
+                    initial={{opacity: 0, x: -100}}
+                    transition={{...transition, duration:2}}
+                    whileInView={{opacity: 1, x:0}}
+                ></motion.div>
+                <motion.div
+                    initial={{opacity: 0, x: 100}}
+                    transition={{...transition, duration:2}}
+                    whileInView={{opacity: 1, x:0}}
+                ></motion.div>
+                <motion.img 
+                    src={testimonialsData[index].image} 
+                    alt='' id='personImage' 
+                    key={index}
+                    initial={{opacity: 0, x: 100}}
+                    animate={{opacity: 1, x: 0}}
+                    exit={{opacity: 0, x:-100}}
+                    transition={transition}
+                />
                 <Div>
                     <img
                         onClick={()=> {
